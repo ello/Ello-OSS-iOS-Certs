@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (3.3.1)
+  - ElloCerts (1.0.0):
+    - Alamofire (~> 3.0)
+  - Nimble (4.0.1)
+  - Quick (0.9.2)
+
+DEPENDENCIES:
+  - ElloCerts (from `../`)
+  - Nimble (~> 4.0)
+  - Quick (~> 0.9)
+
+EXTERNAL SOURCES:
+  ElloCerts:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  ElloCerts: a83ca0179768b8974f9cc518f670fe97bf5d4f86
+  Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+
+PODFILE CHECKSUM: c5a8de24487618f76272f0fac93104d7d40b4b1c
+
+COCOAPODS: 1.0.0.rc.2

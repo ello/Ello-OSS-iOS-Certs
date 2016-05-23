@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ElloCerts_Example' do
+  pod "ElloCerts", :path => "../"
+end
+
+target 'ElloCerts_Tests' do
+  pod "ElloCerts", :path => "../"
+
+  pod 'Quick', '~> 0.9'
+  pod 'Nimble', '~> 4.0'
+end
