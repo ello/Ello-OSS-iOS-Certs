@@ -1,4 +1,4 @@
-[![CI Status](https://img.shields.io/travis/ello/ElloCerts.svg?style=flat)](https://magnum.travis-ci.com/ello/ElloCerts)
+[![Build Status](https://travis-ci.org/ello/Ello-OSS-iOS-Certs.svg?branch=master)](https://travis-ci.org/ello/Ello-OSS-iOS-Certs)
 
 # ElloCerts
 
