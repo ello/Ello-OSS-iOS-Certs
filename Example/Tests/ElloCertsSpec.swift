@@ -11,6 +11,9 @@ class ElloCertsSpec: QuickSpec {
             it("should be empty") {
                 expect(ElloCerts.policy["ello.co"]).to(beNil())
             }
+            it("should be public") {
+                expect(ElloCerts.isPublic) == true
+            }
         }
     }
 }

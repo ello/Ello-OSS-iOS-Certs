@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ElloOSSCerts'
-  s.version          = '1.0.1'
+  s.version          = '1.1.0'
   s.summary          = 'The certs for the Ello iOS app.'
   s.homepage         = 'https://github.com/ello/Ello-OSS-iOS-Certs'
   s.license          = 'Private'
