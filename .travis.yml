@@ -1,9 +1,14 @@
-osx_image: xcode7.2
+osx_image: xcode7.3
 language: objective-c
+xcode_sdk: iphonesimulator9.2
 before_install:
-  - bundle install
+- bundle install
 install:
-  - cd Example ; bundle exec pod install; cd ..
+- cd Example ; bundle exec pod install; cd ..
 xcode_workspace: Example/ElloCerts.xcworkspace
 xcode_scheme: ElloCerts-Example
 xcode_sdk: iphonesimulator
+notifications:
+  slack:
+    rooms:
+      secure: A///DaaXMW6his5rsQkcXtxsUiFug69oSk6lGLKpKARXqguqNVq2wPFcKH91a8qYDFpX+YFJmGiOTfkw83J5jZtYIdUmeg6JjBhF21+CnFFhDjZ5HlWiqrlKdN88nW1LY1WUTl2fBqufA0NVBliuwjxW28PPuZn9B5yBNr/9oZMjRRxEmzxUEfhnYLhmTOwITKZSI2rw54Fld/39wFaAl1KQ81VkSM0ORfp9unPISNvAGARPfeyKQPD/WvUjnqIT3It3xoX5vBnluLgel3AgoPKX/mtXomLm5OYoIQ32He8OfWTRydpEZVSL7U45Bd4W+ikgABmylOxsYkRn6b0q5aCz9tKQzUK9MX2dKUbVYs6PzsFHiALi0vM6PQbyVGKjz4SIeCuGKbpkIJQmnP0TmvhUgelZJNTEg7YutZR+a1ztpH5Jzbng9q41KL4p9rGCjEfOdb6S3qZ6AzQs592FpL0UJAET8z1sJwXezXAsg9m1N2UJFkvoU25f/qrHOshkdRoHVwUmAKjKcWkp8kciCpzPb9v6jGTTeeY8P8QDMPQokJ0bii6lEc+xtX5smd/1+QM04yNc8M1XKdRMxsASXOkspGUlobOggbLRsoHPCGyv4bwO6jaxJiXsORdX5LwNR8zihFLGHa05QPKO56iMuX7ij2GDFtjj5a3dlb+QJhI=
