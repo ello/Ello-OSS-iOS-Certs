@@ -160,12 +160,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ElloCerts_Example" */;
 			buildPhases = (
+				352098475B59BB1CEFD771C6 /* Check Pods Manifest.lock */,
 				F947FD111A3D1CDC5A4DEE6C /* 📦 Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				623A62E2ABBE5CBA7B5FFC88 /* 📦 Embed Pods Frameworks */,
 				E4B36412EF39AC47EFDACEA6 /* 📦 Copy Pods Resources */,
+				9FFB2D82A27E880C7FB5D6C7 /* Embed Pods Frameworks */,
+				DB52B87B906545D0C38A3119 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,12 +183,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ElloCerts_Tests" */;
 			buildPhases = (
+				F34DB893A9335F130214360E /* Check Pods Manifest.lock */,
 				53C567DD9A0B85CFF8323571 /* 📦 Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				23F5DC3B3428D812FDC2976D /* 📦 Embed Pods Frameworks */,
 				A4AFE532692D7B11079DCFF0 /* 📦 Copy Pods Resources */,
+				E2B67FEFF9D469FFD09088D0 /* Embed Pods Frameworks */,
+				40BF034FBD72BC5A06DBFE83 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +276,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElloCerts_Tests/Pods-ElloCerts_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		352098475B59BB1CEFD771C6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40BF034FBD72BC5A06DBFE83 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElloCerts_Tests/Pods-ElloCerts_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		53C567DD9A0B85CFF8323571 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,6 +336,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElloCerts_Example/Pods-ElloCerts_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9FFB2D82A27E880C7FB5D6C7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElloCerts_Example/Pods-ElloCerts_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A4AFE532692D7B11079DCFF0 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +366,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElloCerts_Tests/Pods-ElloCerts_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB52B87B906545D0C38A3119 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElloCerts_Example/Pods-ElloCerts_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2B67FEFF9D469FFD09088D0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElloCerts_Tests/Pods-ElloCerts_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E4B36412EF39AC47EFDACEA6 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +409,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ElloCerts_Example/Pods-ElloCerts_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F34DB893A9335F130214360E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F947FD111A3D1CDC5A4DEE6C /* 📦 Check Pods Manifest.lock */ = {

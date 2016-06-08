@@ -1,25 +1,25 @@
 PODS:
-  - Alamofire (3.3.1)
-  - ElloCerts (1.0.0):
+  - Alamofire (3.4.0)
+  - ElloOSSCerts (1.0.0):
     - Alamofire (~> 3.0)
   - Nimble (4.0.1)
   - Quick (0.9.2)
 
 DEPENDENCIES:
-  - ElloCerts (from `../`)
+  - ElloOSSCerts (from `../`)
   - Nimble (~> 4.0)
   - Quick (~> 0.9)
 
 EXTERNAL SOURCES:
-  ElloCerts:
+  ElloOSSCerts:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
-  ElloCerts: a83ca0179768b8974f9cc518f670fe97bf5d4f86
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  ElloOSSCerts: bcdf9fe46297594ed3a3a7245d21793fba4ab2a6
   Nimble: 0f3c8b8b084cda391209c3c5efbb48bedeeb920a
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
 
-PODFILE CHECKSUM: c5a8de24487618f76272f0fac93104d7d40b4b1c
+PODFILE CHECKSUM: 89a16f6c6797225b1b401a48fd68314c0d8c5964
 
-COCOAPODS: 1.0.0.rc.2
+COCOAPODS: 1.0.0.beta.2
