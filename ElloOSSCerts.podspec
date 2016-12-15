@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ElloOSSCerts'
-  s.version          = '1.1.0'
+  s.version          = '2.0.0'
   s.summary          = 'The certs for the Ello iOS app.'
   s.homepage         = 'https://github.com/ello/Ello-OSS-iOS-Certs'
   s.license          = 'Private'
@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'UIKit'
   s.module_name = 'ElloCerts'
-  s.dependency 'Alamofire', '~> 3.0'
+  s.dependency 'Alamofire', '~> 4.0'
 end
